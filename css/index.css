@@ -28,6 +28,10 @@ ul {
     align-items: center;
 }
 
+a {
+    text-decoration-line: none;
+}
+
 body {
     background-color: white;
     font-family: 'Montserrat', sans-serif;
@@ -49,6 +53,17 @@ footer .footer__img {
     max-width: 40px;
 }
 
+.accordion-button {
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: white;
+}
+
+.accordion-body {
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+}
+
 
 header .header__img {
     max-width: 60px;
@@ -64,10 +79,11 @@ header nav .enlaces {
     background-color: black;
     color: white;
     transition: background-color 2s;
+    border-radius: 1rem;
 }
 
 .enlaces .enlaces__sub {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     color: black;
     font-family: 'Montserrat', sans-serif;
     padding: 1rem;
@@ -75,7 +91,7 @@ header nav .enlaces {
 
 .enlaces__sub--active {
     text-decoration-line: underline;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     color: black;
     font-family: 'Montserrat', sans-serif;
 }
@@ -84,7 +100,14 @@ header nav .enlaces {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.8;
+    font-size: 1.5em;
     padding: 1rem;
+    color: black;
+}
+
+.nueva__temporada__p {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
 }
 
 
@@ -142,7 +165,7 @@ header nav .enlaces {
     padding: 1rem;
     gap: 1rem;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.2em;
 }
 
 .carrete .carrete__img__1 {
@@ -207,8 +230,7 @@ header nav .enlaces {
 
 .informacion {
     background-color: black;
-    font-size: 1.5rem;
-    color: white;
+    font-size: 1.5em;
     font-family: 'Montserrat', sans-serif;
     display: flex;
     padding: 4rem;
@@ -217,11 +239,19 @@ header nav .enlaces {
     gap: 1rem;
 }
 
+h4 {
+    color: white;
+}
+
+.informacion__p {
+    color: white;
+}
+
 .historia {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
-    font-size: 2rem;
+    font-size: 2em;
     padding: 1rem;
 }
 
@@ -237,7 +267,7 @@ header nav .enlaces {
     background-color: black;
     color: white;
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 1.4em;
 }
 
 .contactanos {
@@ -251,7 +281,7 @@ form {
     padding: 2rem;
     font-family: 'Montserrat', sans-serif;
     border-radius: .5rem;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     text-align: center;
 }
 
@@ -306,6 +336,7 @@ table {
     border-style: inset;
     border-color: black;
 }
+
 
 @media screen and (max-width: 480px) {
     nav {
