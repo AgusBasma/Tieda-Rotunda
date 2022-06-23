@@ -1,0 +1,16 @@
+.carrete {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 1rem;
+    gap: 1rem;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.rodillo {
+        display: grid;
+        padding: 1rem;
+        gap: 1rem;
+
+}
