@@ -431,3 +431,24 @@ table {
     }
 
 }
+
+.redes {
+    min-width: 700px;
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+}
+
+.redes a {
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: gray;
+    color: white;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+}
+
