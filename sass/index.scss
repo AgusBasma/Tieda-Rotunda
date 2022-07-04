@@ -1,6 +1,16 @@
-/* MISC */ 
 
+/* MISC */ 
 @import "./misc/variables";
 @import "./misc/normalize";
-@import "./misc/mixins"
+@import "./misc/mixins";
 
+/* PARTIALS */
+@import './partials/header';
+@import './partials/footer';
+
+/* VIEWS */
+@import './views/home';
+@import './views/preguntasfrecuentes';
+@import './views/e-shop';
+@import './views/contacto';
+@import './views/galeria';

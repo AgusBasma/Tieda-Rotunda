@@ -1,0 +1,33 @@
+.contenedor .galeria {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.btn {
+    width: 150px;
+    padding: 10px 12px;
+    font-size: 18px;
+    margin: 0 auto;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn--aceptar {
+    @extend .btn;
+    background-color: grey;
+    &:hover {
+        background-color: rgba(128, 128, 128, 0.733);
+    }
+}
+
+.btn--cancelar {
+    @extend .btn;
+    background-color: grey;
+    &:hover {
+        background-color: rgba(128, 128, 128, 0.733);
+    }
+}

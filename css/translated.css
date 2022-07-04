@@ -1,1 +1,98 @@
 /* MISC */
+/* Colors */
+/* Spacings */
+/* Font-family */
+/* Font-size*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+img {
+  width: 100%; }
+
+/* PARTIALS */
+header {
+  padding: 1rem;
+  border-bottom: black;
+  background: linear-gradient(white, beige); }
+  header .header__img {
+    max-width: 60px; }
+  header nav .enlaces {
+    gap: 2rem;
+    display: flex; }
+    header nav .enlaces .enlaces__sub {
+      font-size: 1.5em;
+      color: black;
+      font-family: 'Montserrat', sans-serif;
+      padding: 1rem; }
+      header nav .enlaces .enlaces__sub:hover {
+        background-color: black;
+        color: white;
+        transition: background-color 2s;
+        border-radius: 1rem; }
+      header nav .enlaces .enlaces__sub .enlaces__sub--active {
+        text-decoration-line: underline;
+        font-size: 1.5em;
+        color: black;
+        font-family: 'Montserrat', sans-serif; }
+
+footer {
+  padding: 1rem;
+  border-bottom: black;
+  background-color: beige; }
+  footer footer .footer__img {
+    max-width: 40px; }
+  footer .redes {
+    display: flex;
+    flex-direction: self-start;
+    justify-content: end;
+    align-items: self-start;
+    gap: 1rem;
+    min-width: 700px; }
+    footer .redes .redes a {
+      text-decoration: none;
+      font-size: 28px;
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      color: white;
+      border-radius: 50%;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); }
+      footer .redes .redes a .btn--facebook {
+        background-color: "#0000FF"; }
+      footer .redes .redes a .btn--instagram {
+        background-color: "#78288C"; }
+      footer .redes .redes a .btn--whatsapp {
+        background-color: "#32CD32"; }
+
+/* VIEWS */
+.contenedor .galeria {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  gap: 1rem; }
+
+.btn, .btn--aceptar, .btn--cancelar {
+  width: 150px;
+  padding: 10px 12px;
+  font-size: 18px;
+  margin: 0 auto;
+  border: none;
+  font-family: 'Montserrat', sans-serif; }
+
+.btn--aceptar {
+  background-color: grey; }
+  .btn--aceptar:hover {
+    background-color: rgba(128, 128, 128, 0.733); }
+
+.btn--cancelar {
+  background-color: grey; }
+  .btn--cancelar:hover {
+    background-color: rgba(128, 128, 128, 0.733); }
