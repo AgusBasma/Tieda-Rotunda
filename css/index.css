@@ -193,7 +193,7 @@ header nav .enlaces {
     font-size: 1.2em;
 }
 
-.rodillo {
+#grilla {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, 1fr);
