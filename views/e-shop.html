@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -43,36 +44,80 @@
             <picture class="carrete__img__1">
                 <img src="../img/Tienda 1.png" width="100%" alt="">
                 <p>Campera Bomber</p>
-                <p>$10.000</p>
+                <p>$20.000</p>
+                <input type="color" name="" id="">
             </picture>
             <picture class="carrete__img__2">
                 <img src="../img/Tienda 2.png" width="100%" alt="">
                 <p>Buzo Clásico</p>
-                <p>$10.000</p>
+                <p>$5.000</p>
+                <input type="color" name="" id="">
             </picture>
             <picture class="carrete__img__3">
                 <img src="../img/Tienda 3.png" width="100%" alt="">
                 <p>Chaqueta Cuero</p>
-                <p>$10.000</p>
+                <p>$11.750</p>
+                <input type="color" name="" id="">
             </picture>
             <picture class="carrete__img__4">
                 <img src="../img/Tienda 4.png" width="100%" alt="">
                 <p>Jean Ancho</p>
-                <p>$10.000</p>
+                <p>$10.500</p>
+                <input type="color" name="" id="">
             </picture>
             <picture class="carrete__img__5">
                 <img src="../img/Tienda 5.png" width="100%" alt="">
                 <p>Remera Cuello V</p>
-                <p>$10.000</p>
+                <p>$8.000</p>
+                <input type="color" name="" id="">
             </picture>
             <picture class="carrete__img__6">
                 <img src="../img/Tienda 6.png" width="100%" alt="">
                 <p>Sueter Tejido</p>
-                <p>$10.000</p>
+                <p>$12.000</p>
+                <input type="color" name="" id="">
             </picture> 
         </section>
-        <footer>
-            <nav class="navegacion">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../img/Tapados e-shop.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>TAPADOS</h1>
+                  <p>Tapados largos, cortos y de paño</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../img/Abrigos e-shop.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>ABRIGOS</h1>
+                  <p>Camperas de cuero, inflables, ecocuero</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../img/Capas e-shop.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>CAPAS</h1>
+                  <p>Capas de varios estilos. Desde lisas hasta estampadas</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <footer>
+            <nav class="navegacion__footer">
                 <picture class="footer__logo">
                     <a href="../index.html">
                         <img src="../img/ROTUNDA.png" alt="" class="footer__img">
@@ -83,6 +128,14 @@
                     <a href="#" class="fa fa-instagram"></a>
                     <a href="#" class="fa fa-whatsapp"></a>
                 </section>
+                <section class="copy">
+                    <h3>REGISTRATE PARA CONOCER NUESTRAS NOVEDADES</h3>
+                    <p>Suscribite a nuestros newsletter para recibir novedades de nuestras
+                        colecciones, promociones, eventos y proyectos especiales</p>
+                        <input type="email" name="Email" class="field" placeholder="Correo Electronico">
+                    <p>Copyright © 2022 rotundasas. Todos los derechos reservados.</p>
+                </section>
             </nav>
-        </footer> 
+        </footer>
+          <script src="../js/bootstrap.min.js"></script>
 </body>

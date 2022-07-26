@@ -9,6 +9,7 @@
     <meta name="description" content="Rotunda nueva temporada, otoño/invierno 2022, remeras, abrigos, pantalones.">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 <body>
     <header>
         <nav class="navegacion">
@@ -41,45 +42,45 @@
         <h2>PRE ORDER - EXCLUSIVO ONLINE</h2>
          <p class="nueva__temporada__p">DESCUBRI NUESTROS NUEVOS MODELOS DE LA TEMPORADA OTOÑO - INVIERNO 2022</p>
     </section>
-    <main class="contenedor">
-        <section id="galeria" class="galeria">
-            <picture class="galeria__img__1">
-                <img src="./img/Temporada 1.jpg" alt="">
-            </picture>
-            <button class="btn btn--aceptar" >Compra Ya</button>
-            <button class="btn btn--cancelar" >Cancelar</button>
-            <picture class="galeria__img__2">
-                <img src="./img/Temporada 2.jpg" alt="">
-            </picture>
-            <button class="btn btn--aceptar" >Compra Ya</button>
-            <button class="btn btn--cancelar" >Cancelar</button>
-            <picture class="galeria__img__3">
-                <img src="./img/Temporada 3.png" alt="">
-            </picture>
-            <button class="btn btn--aceptar" >Compra Ya</button>
-            <button class="btn btn--cancelar" >Cancelar</button>
-            <picture class="galeria__img__4">
-                <img src="./img/Temporada 4.jpg" alt="">
-            </picture>
-            <button class="btn btn--aceptar">Compra Ya</button>
-            <button class="btn btn--cancelar">Cancelar</button>
-        </section>
-    </main>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/Temporada 1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/Temporada 2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/Temporada 3.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
         <section class="informacion">
             <div class="informacion__nav">
                 <a href="./views/preguntas frecuentes.html">
+                    <span style='font-size:25px;'>&#9193;</span>
                     <h4>ENVIOS EXPRESS A CABA</h4>
                     <p class="informacion__p">Hasta 48 hs.</p>
                 </a>  
             </div>
             <div class="informacion__nav">
                 <a href="./views/preguntas frecuentes.html">
+                    <span style='font-size:25px;'>&#128179;</span>
                     <h4>HASTA 12 CUOTAS SIN INTERES</h4>
                     <p class="informacion__p">con todas las tarjetas bancarias</p>
                 </a>  
             </div>
             <div class="informacion__nav">
                 <a href="./views/preguntas frecuentes.html">
+                    <span style='font-size:25px;'>&#128257;</span>
                     <h4>CAMBIOS Y DEVOLUCIONES</h4>
                     <p class="informacion__p">Tenés 30 días después de la compra</p>
                 </a>   
@@ -99,7 +100,7 @@
         </section>
     </main>    
     <footer>
-        <nav class="navegacion">
+        <nav class="navegacion__footer">
             <picture class="footer__logo">
                 <a href="./index.html">
                     <img src="./img/ROTUNDA.png" alt="" class="footer__img">
@@ -110,7 +111,15 @@
                 <a href="#" class="fa fa-instagram"></a>
                 <a href="#" class="fa fa-whatsapp"></a>
             </section>
+            <section class="copy">
+                <h3>REGISTRATE PARA CONOCER NUESTRAS NOVEDADES</h3>
+                <p>Suscribite a nuestros newsletter para recibir novedades de nuestras
+                    colecciones, promociones, eventos y proyectos especiales</p>
+                    <input type="email" name="Email" class="field" placeholder="Correo Electronico">
+                <p>Copyright © 2022 rotundasas. Todos los derechos reservados.</p>
+            </section>
         </nav>
-    </footer> 
+    </footer>
+    <script src="./js/bootstrap.min.js"></script>    
 </body>
 </html>

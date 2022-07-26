@@ -28,7 +28,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
 }
 
 html {
@@ -54,7 +54,7 @@ ul {
 }
 
 a {
-    text-decoration-line: none;
+    text-decoration-line: none !important;
 }
 
 body {
@@ -72,10 +72,6 @@ footer {
     padding: 1rem;
     border-bottom: black;
     background-color: beige;
-}
-
-footer .footer__img {
-    max-width: 40px;
 }
 
 .accordion-button {
@@ -124,17 +120,25 @@ header nav .enlaces {
 .nueva__temporada{
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     line-height: 1.8;
     font-size: 1.5em;
-    padding: 1rem;
+    padding: 4rem;
     color: black;
+}
+
+.nueva__temporada h2 {
+    font-weight: bolder;
+}
+
+.nueva__temporada h1 {
+    font-weight: bolder;
 }
 
 .nueva__temporada__p {
     font-family: 'Montserrat', sans-serif;
     color: black;
 }
-
 
 .contenedor .galeria {
     display: flex;
@@ -145,10 +149,14 @@ header nav .enlaces {
     gap: 1rem;
 }
 
+#carouselExampleFade {
+    padding-bottom: 2rem;
+}
+
 #modelos {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     padding: 1rem;
     gap: 1rem;
 }
@@ -186,7 +194,7 @@ header nav .enlaces {
 .carrete {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     padding: 1rem;
     gap: 1rem;
     text-align: center;
@@ -196,7 +204,7 @@ header nav .enlaces {
 #grilla {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     padding: 1rem;
     gap: 1rem;
 }
@@ -204,6 +212,13 @@ header nav .enlaces {
 .carrete .carrete__img__1 {
     grid-column: 1 / 3;
     transition: transform 0.5s
+}
+
+.carrete .carrete__img__1 input{
+    width: 10%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    width: 30px;
+    height: 30px;
 }
 
 .carrete .carrete__img__1:hover {
@@ -216,6 +231,13 @@ header nav .enlaces {
     transition: transform 0.5s
 }
 
+.carrete .carrete__img__2 input{
+    width: 10%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    width: 30px;
+    height: 30px;
+}
+
 .carrete .carrete__img__2:hover {
     grid-column: 3 / 5;
     transform: scale(1.05);
@@ -224,6 +246,13 @@ header nav .enlaces {
 .carrete .carrete__img__3 {
     grid-column: 5 / 7;
     transition: transform 0.5s
+}
+
+.carrete .carrete__img__3 input{
+    width: 10%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    width: 30px;
+    height: 30px;
 }
 
 .carrete .carrete__img__3:hover {
@@ -236,6 +265,13 @@ header nav .enlaces {
     transition: transform 0.5s
 }
 
+.carrete .carrete__img__4 input{
+    width: 10%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    width: 30px;
+    height: 30px;
+}
+
 .carrete .carrete__img__4:hover {
     grid-column: 7 / 9;
     transform: scale(1.05);
@@ -244,6 +280,13 @@ header nav .enlaces {
 .carrete .carrete__img__5 {
     grid-column: 9 / 11;
     transition: transform 0.5s
+}
+
+.carrete .carrete__img__5 input{
+    width: 10%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    width: 30px;
+    height: 30px;
 }
 
 .carrete .carrete__img__5:hover {
@@ -256,9 +299,32 @@ header nav .enlaces {
     transition: transform 0.5s
 }
 
+.carrete .carrete__img__6 input{
+    width: 10%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    width: 30px;
+    height: 30px;
+}
+
 .carrete .carrete__img__6:hover {
     grid-column: 11 / 13;
     transform: scale(1.05);
+}
+
+.carousel-caption h1 {
+    font-weight: bold;
+    color: #000000;
+    font-size: 5em;
+    font-family: var(--font-principal);
+    background-color: var(--secondary);
+}
+
+.carousel-caption p {
+    font-weight: bold;
+    color: #000000;
+    font-size: 2em;
+    font-family: var(--font-principal);
+    background-color: var(--secondary);
 }
 
 .informacion {
@@ -273,27 +339,13 @@ header nav .enlaces {
 }
 
 h4 {
-    color: white;
+    color: white !important;
+    font-weight: bold !important;
 }
 
 .informacion__p {
-    color: white;
+    color: white !important;
 }
-
-.historia {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.5;
-    font-size: 2em;
-    padding: 1rem;
-}
-
-.video {
-    padding: 4rem;
-    justify-content: center;
-    display: flex;
-}
-
 
 .info-compras {
     text-align: center;
@@ -312,7 +364,7 @@ form {
     margin: 0 auto;
     background-color: gray;
     padding: 2rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-principal);
     border-radius: .5rem;
     font-size: 1.5em;
     text-align: center;
@@ -332,42 +384,64 @@ input, textarea {
     width: 360px;
 }
 
-
-.video-nosotros {
-    border-style: inset;
-    border-color: black;
-    border-width: 5px;
+.redes {
+    min-width: 500px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
-.remeras {
-    margin-left: 180px;
+.redes a {
+    text-decoration: none;
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
 }
 
-.jeans {
-    margin-left: 150px;
+.fa.fa-facebook {
+    background-color: blue;
 }
 
-.sueters {
-    margin-left: 2px;
+.fa.fa-instagram {
+    background-color: violet;
 }
 
-.talles-tabla {
-    border-style: inset;
-    border-color: black;
-    border-width: 5px;
-    display: inline;
+.fa.fa-whatsapp {
+    background-color: green;
 }
 
-.elige-color {
-    text-align: left;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+.copy {
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    line-height: 60px;
 }
 
-table {
-    width: 50%;
-    border-style: inset;
-    border-color: black;
+.accordion-button {
+    color: var(--terciary) !important;
+}
+
+.navegacion__footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer .footer__logo {
+    display: flex;
+    justify-content: center;
+    max-width: 60px;
+}
+
+.copy p  {
+    font-size: 1.8em;
 }
 
 
@@ -454,36 +528,4 @@ table {
         grid-column: 7 / 13;
         grid-row: 2;
     }
-
-}
-
-.redes {
-    min-width: 700px;
-    display: flex;
-    justify-content: end;
-    gap: 1rem;
-}
-
-.redes a {
-    text-decoration: none;
-    font-size: 28px;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-    color: white;
-    border-radius: 50%;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
-}
-
-.fa.fa-facebook {
-    background-color: blue;
-}
-
-.fa.fa-instagram {
-    background-color: violet;
-}
-
-.fa.fa-whatsapp {
-    background-color: green;
 }

@@ -11,3 +11,22 @@ html {
 img {
     width: 100%;
 }
+
+input, textarea {
+    outline: none;
+    width: 360px;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+}
+
+body {
+    background-color: var(--primary);
+    font-family: var(--font-principal);
+}

@@ -14,6 +14,21 @@ html {
 img {
   width: 100%; }
 
+input, textarea {
+  outline: none;
+  width: 360px; }
+
+ul, ol {
+  list-style-type: none; }
+
+ul {
+  display: flex;
+  align-items: center; }
+
+body {
+  background-color: var(--primary);
+  font-family: var(--font-principal); }
+
 /* PARTIALS */
 header {
   padding: 1rem;
@@ -44,33 +59,66 @@ footer {
   padding: 1rem;
   border-bottom: black;
   background-color: beige; }
-  footer footer .footer__img {
-    max-width: 40px; }
-  footer .redes {
+  footer .navegacion__footer {
     display: flex;
-    flex-direction: self-start;
-    justify-content: end;
-    align-items: self-start;
-    gap: 1rem;
-    min-width: 700px; }
-    footer .redes .redes a {
-      text-decoration: none;
-      font-size: 28px;
-      width: 60px;
-      height: 60px;
-      line-height: 60px;
-      text-align: center;
-      color: white;
-      border-radius: 50%;
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); }
-      footer .redes .redes a .btn--facebook {
-        background-color: "#0000FF"; }
-      footer .redes .redes a .btn--instagram {
-        background-color: "#78288C"; }
-      footer .redes .redes a .btn--whatsapp {
-        background-color: "#32CD32"; }
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; }
+    footer .navegacion__footer footer .footer__img {
+      max-width: 40px; }
+    footer .navegacion__footer footer .footer__logo {
+      display: flex;
+      justify-content: center;
+      max-width: 60px; }
+    footer .navegacion__footer .redes {
+      display: flex;
+      flex-direction: self-start;
+      justify-content: end;
+      align-items: self-start;
+      gap: 1rem;
+      min-width: 700px; }
+      footer .navegacion__footer .redes .redes a {
+        text-decoration: none;
+        font-size: 28px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: white;
+        border-radius: 50%;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); }
+        footer .navegacion__footer .redes .redes a .btn--facebook {
+          background-color: "#0000FF"; }
+        footer .navegacion__footer .redes .redes a .btn--instagram {
+          background-color: "#78288C"; }
+        footer .navegacion__footer .redes .redes a .btn--whatsapp {
+          background-color: "#32CD32"; }
+  footer .copy {
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    line-height: 60px; }
+    footer .copy .copy p {
+      font-size: 1.8em; }
 
 /* VIEWS */
+.nueva__temporada {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  line-height: 1.8;
+  font-size: 1.5em;
+  padding: 4rem;
+  color: black; }
+  .nueva__temporada .nueva__temporada h2 {
+    font-weight: bolder; }
+  .nueva__temporada .nueva__temporada h1 {
+    font-weight: bolder; }
+  .nueva__temporada .nueva__temporada__p {
+    font-family: 'Montserrat', sans-serif;
+    color: black; }
+
 .contenedor .galeria {
   display: flex;
   flex-direction: row;
@@ -108,7 +156,7 @@ footer {
 .carrete {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   padding: 1rem;
   gap: 1rem;
   text-align: center;
@@ -165,7 +213,7 @@ footer {
 #grilla {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   padding: 1rem;
   gap: 1rem; }
   #grilla .carrete .carrete__img__1 {
